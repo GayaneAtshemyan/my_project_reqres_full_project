@@ -7,6 +7,7 @@ import pytest
 
 class TestUserList():
 
+
     @allure.title('Test Retrieve All Users')
     @allure.description('This test case verifies that the system retrieves all users')
     @pytest.mark.regression
