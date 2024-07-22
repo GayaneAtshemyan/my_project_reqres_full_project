@@ -7,7 +7,7 @@ class TestPartialUpdateUserPatch():
     @allure.feature("API Tests")
     @allure.story("Update User")
     @pytest.mark.regression
-    def test_patch_user(self):
+    def test_patch_user(self, auth_token):
         user_id = 2
         url = f"https://reqres.in/api/users/{user_id}"
         payload = {

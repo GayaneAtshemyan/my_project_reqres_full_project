@@ -9,7 +9,7 @@ class TestUpdateUserPut():
     @allure.feature("Update User")
     @allure.story("Update User Put")
     @pytest.mark.regression
-    def test_update_user(self):
+    def test_update_user(self, auth_token):
         user_id = 2
         url = f"https://reqres.in/api/users/{user_id}"
         payload = {

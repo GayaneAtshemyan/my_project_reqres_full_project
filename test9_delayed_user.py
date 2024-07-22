@@ -6,7 +6,7 @@ import allure
 @allure.feature("Delayed Users")
 @allure.story("Delayed Response - Get Users")
 @pytest.mark.regression
-def test_delayed_response_get_users():
+def test_delayed_response_get_users(auth_token):
     url = "https://reqres.in/api/users"
     params = {
         "delay": 3

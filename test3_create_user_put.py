@@ -8,7 +8,7 @@ class TestUserCreation():
     @allure.story("Create User")
     @pytest.mark.regression
     @pytest.mark.smoke
-    def test_create_user(self):
+    def test_create_user(self,auth_token):
         url = "https://reqres.in/api/users"
         payload = {
             "name": "morpheus",
